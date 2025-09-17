@@ -1,11 +1,9 @@
-import cv2
 import tensorflow as tf
 import os
 import numpy as np
 import matplotlib.pyplot as plt
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Conv2D, MaxPooling2D, Dense, Flatten
-from tensorflow.keras.metrics import Precision, Recall, BinaryAccuracy
 import warnings
 warnings.filterwarnings("ignore")
 
@@ -85,16 +83,7 @@ print(f"Recall: {results[3]:.4f}")
 
 model_dir = 'models'
 model_path = os.path.join(model_dir, 'image_classifier.keras')
-model.save(model_path)
-
-test_image = cv2.imread('img.png')
-resize = tf.image.resize(test_image, (256,256))
-input_tensor = tf.expand_dims(resize, axis=0)
-yhat = model.predict(input_tensor)
-if yhat > 0.5:
-    print(f'Predicted class is Sad')
-else:
-    print(f'Predicted class is Happy')
+# model.save(model_path)
 
 
 
