@@ -1,6 +1,7 @@
 import tensorflow as tf
 import cv2
 import os
+import matplotlib.pyplot as plt
 
 model_dir = 'models'
 model_path = os.path.join(model_dir, 'image_classifier.keras')
@@ -14,3 +15,6 @@ if yhat > 0.5:
     print(f'Predicted class is Sad')
 else:
     print(f'Predicted class is Happy')
+
+plt.imshow(test_image)
+plt.show()
