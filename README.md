@@ -1,6 +1,6 @@
 # Image Classification with TensorFlow
 
-The EmotionDetector project is a deep learning–based system designed to classify human emotions (happy/sad) from images. It leverages Convolutional Neural Networks (CNNs) built with TensorFlow/Keras to automatically learn visual features from facial expressions and predict the corresponding emotion class.
+The project is a deep learning–based system designed to classify human emotions (happy/sad) from images. It leverages Convolutional Neural Networks (CNNs) built with TensorFlow/Keras to automatically learn visual features from facial expressions and predict the corresponding emotion class.
 
 ---
 
